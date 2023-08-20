@@ -728,6 +728,10 @@ footer .links_footer a {
   #ContactUs form {
     padding: 0px 10px;
   }
+
+  footer .links_footer {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
