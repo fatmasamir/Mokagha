@@ -28,7 +28,8 @@ h1 {
   align-items: center;
 }
 
-.btn-main {
+.btn-main,
+.btn-main:hover {
   background: linear-gradient(90deg, var(--mainColor) 0%, #01E3A1 100%);
   color: white;
   border-radius: 24px;
@@ -263,6 +264,14 @@ p {
   right: 10px;
   top: 17px;
   z-index: 999;
+}
+
+.modal-body {
+  padding: 40px;
+}
+
+.modal-body .btn-main {
+  width: 100%;
 }
 
 /* haeder */

@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Roya - رؤية</title>
+  <title>Mokagha </title>
   <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" /> -->
   <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
@@ -281,20 +281,19 @@
             <h4>تواصل معنا</h4>
             <div class="border_span"></div>
             <div>
-              <form>
-                <div class="row">
-                  <div class="col-md-6"><label>اسمك بالكامل</label>
-                    <input type="text" class="form-control" placeholder="اسمك بالكامل" name="name">
-                  </div>
-                  <div class="col-md-6"><label>البريد الالكتروني </label>
-                    <input type="email" class="form-control" placeholder=" البريد الالكتروني" name="email">
-                  </div>
-                  <div class="col-md-12"><label for="comment">رسالتك</label>
-                    <textarea class="form-control" rows="5" id="comment" name="message"></textarea>
-                  </div>
-                  <div class="col-md-12"><button class="btn btn-main">ارسال</button></div>
+              <div class="row">
+                <div class="col-md-6"><label>اسمك بالكامل</label>
+                  <input type="text" class="form-control" placeholder="اسمك بالكامل" name="name">
                 </div>
-              </form>
+                <div class="col-md-6"><label>البريد الالكتروني </label>
+                  <input type="email" class="form-control" placeholder=" البريد الالكتروني" name="email">
+                </div>
+                <div class="col-md-12"><label for="comment">رسالتك</label>
+                  <textarea class="form-control" rows="5" id="comment" name="message"></textarea>
+                </div>
+                <div class="col-md-12"><button class="btn btn-main" data-toggle="modal"
+                    data-target="#messageSend">ارسال</button></div>
+              </div>
             </div>
           </div>
           <div class="col-lg-6 " data-aos="flip-left" data-aos-duration="200" data-aos-delay="200"><img
@@ -320,7 +319,7 @@
 
 
   <!-- Modal -->
-  <div class="modal fade tamanyModal" id="tamanyModal" tabindex="-1" role="dialog" aria-labelledby="tamanyModal"
+  <div class="modal fade messageSend" id="messageSend" tabindex="-1" role="dialog" aria-labelledby="messageSend"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -330,63 +329,16 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="row">
-            <div class="col-12 col-lg-6">
-              <h4>Silver</h4>
-              <h4><span>$199.00</span>/Month</h4>
+          <div class="row text-center">
+            <div class="col-md-12">
+              <h4>تم الارسال بنجاح</h4>
+              <p>يسعدنا تواصلك معنا وسيقوم أحد مندوبينا<br> بالاتصال بك قريبًا.</p>
             </div>
-            <div class="col-12 col-lg-6 text-end"><img src="./assets/Tameny.svg" /></div>
-          </div>
-          <div class="row mt-4 mb-4 list">
-            <div class="col-3 col-lg-3 text-start">
-              <h5>For</h5>
-              <h6 class="font-bold">Female</h6>
-            </div>
-            <div class="col-1 col-lg-1">
-              <span></span>
-            </div>
-            <div class="col-3 col-lg-4 text-center">
-              <h5>Tests</h5>
-              <h6 class="font-bold">5</h6>
-            </div>
-            <div class="col-1 col-lg-1">
-              <span></span>
-            </div>
-            <div class="col-3 col-lg-3 text-end">
-              <h5>Plan</h5>
-              <h6 class="once">Once</h6>
+            <div class="col-md-12">
+              <button class="btn btn-main">حسناً
+              </button>
             </div>
           </div>
-          <ul class="tabs row text-center">
-            <li class="col-6">
-              <h5>Description</h5>
-              <div class="spinner tabecontenttamen active" onclick="selectTamen(event, 'contentDescription');"></div>
-            </li>
-            <li class="col-6">
-              <h5>Preparation</h5>
-              <div class="spinner tabecontenttamen" onclick="selectTamen(event, 'contentPreparation');"></div>
-            </li>
-          </ul>
-          <div class="content-tab mb-5 contenttamen" id="contentDescription">
-            <p class="mb-4 text-start">It includes a set of medical tests that are done periodically (every six months),
-              and they are as follows:</p>
-            <p class="mb-4 text-start"> It is required to count the two hours from the start of eating and it is
-              required to eat within the first ten minutes from the beginning of the two hours.
-            </p>
-            <p class=" text-start">
-              It is not allowed to eat any food during the two hours. It is only allowed to take water and medication,
-              if available. Please come to the laboratory at least a quarter of an hour before the end of the two hours
-              It is only allowed to take water and medication, if available. Please come to the laboratory at least a
-              quarter of an hour before the end of the two hours ..
-            </p>
-          </div>
-          <div class="content-tab mb-5 contenttamen" id="contentPreparation">
-            <p class="mb-4 text-start">It includes a set of medical tests that are done periodically (every six months),
-              and they are as follows:</p>
-          </div>
-          <button class="btn btn-shopping" data-toggle="modal" data-target="#successModal"><img
-              src="./assets/shopping.svg"> Add To Cart
-          </button>
         </div>
       </div>
     </div>
