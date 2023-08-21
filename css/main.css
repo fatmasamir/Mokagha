@@ -50,9 +50,9 @@ ul {
   padding: 0;
 }
 
-/* h2 {
-  font-size: 30px !important; */
-/* } */
+h2 {
+  color: #01c4cf;
+}
 
 .form-control {
   direction: inherit;
@@ -306,6 +306,10 @@ header .content_img_d_abs {
   position: absolute;
   top: 100px;
   z-index: 0;
+}
+
+header .square {
+  right: 10%;
 }
 
 header .d_relative .content_img_d_abs {
