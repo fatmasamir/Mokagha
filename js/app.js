@@ -1,22 +1,25 @@
 $(document).ready(function () {
   // Increase
-  let valueDisplays = document.querySelectorAll(".num_inc");
-  let interval = 3000;
+  // Back to top
+  var amountScrolled = 200;
+  var amountScrolledNav = 25;
+
   $(window).scroll(function () {
-    if ($(window).scrollTop() < 2000) {
-      valueDisplays.forEach((valueDisplay) => {
-        let startValue = 0;
-        let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-        let duration = Math.floor(interval / endValue);
-        let counter = setInterval(function () {
-          startValue += 1;
-          valueDisplay.textContent = startValue;
-          if (startValue == endValue) {
-            clearInterval(counter);
-          }
-        }, duration);
-      });
+    if ($(window).scrollTop() > amountScrolled) {
+      $("button.back-to-top").addClass("show");
+    } else {
+      $("button.back-to-top").removeClass("show");
     }
+  });
+
+  $("button.back-to-top").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      800
+    );
+    return false;
   });
   // Smooth Scrolling
   $('a[href*="#"]')
